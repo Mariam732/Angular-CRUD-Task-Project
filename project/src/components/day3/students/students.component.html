@@ -1,0 +1,24 @@
+
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Name</th>
+<th class="text-left">Age</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+
+    <tr *ngFor="let std of students">
+        <td>{{std.name}}</td>
+        <td>{{std.age}}</td>
+      </tr>
+    @for ( std of students; track std.name) {
+        <tr>
+          <td>{{std.name}}</td>
+          
+          <td>{{std.age}}</td>
+        </tr>
+      }
+</tbody>
+</table>
+  

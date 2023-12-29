@@ -1,0 +1,30 @@
+{
+  "students": [
+    {
+      "id": 5,
+      "name": "Maisa",
+      "age": 22,
+      "email": "maisa@gmail.com",
+      "phone": "05555555555"
+    },
+    {
+      "name": "ahmed",
+      "email": "ahmed@gmail.com",
+      "phone": "1234567",
+      "id": 7
+    },
+    {
+      "name": "mariam",
+      "email": "mariam@gmail.com",
+      "phone": "098765443",
+      "id": 8
+    },
+    {
+      "name": "omar",
+      "email": "omar@gmail.com",
+      "phone": "0766544322",
+      "id": 9
+    }
+  ],
+  "Inst": []
+}

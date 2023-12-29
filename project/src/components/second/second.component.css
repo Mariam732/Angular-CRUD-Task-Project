@@ -1,0 +1,47 @@
+
+.btn {
+    background-color: #04AA6D; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin-top: 2%;
+  }
+
+
+
+  .btnx {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin-top: 2%;
+    border-radius: 12px;
+    margin-left: 3%;
+  }
+
+ 
+  .slider{
+	margin:50px auto;
+	width:50%;
+}
+
+.img-box img{
+	width:100%;
+}
+
+.b{
+display: flex;
+justify-content: center;    
+/* background-color: blue; */
+width: 60%;
+margin: auto;
+   
+}

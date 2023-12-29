@@ -1,0 +1,28 @@
+<div class="box">
+
+  <div class="login-page">
+    <div class="form">
+
+      <form class="login-form" [formGroup]="myRegForm">
+        <input formControlName="name" type="text" class="form-control" placeholder="Name"/>
+        @if (!NameValid) {
+          <p style="color: blue;">{{nameReq}}</p>
+        }
+        <input formControlName="email" type="text"class="form-control"  placeholder="Email"/>
+        @if (!EmailValid) {
+          <p style="color: blue;">{{emailReq}}</p>
+        }
+        <input formControlName="age" type="number"class="form-control"  placeholder="Age"/>
+        @if (!AgeValid) {
+          <p style="color: blue;">{{ageReq}}</p>
+        }
+       <button type="button" class="btn btn-outline-success" 
+       (click)="displayData()">Add</button>
+
+      </form>
+    </div>
+  </div>  
+</div>
+
+  
+   

@@ -1,0 +1,33 @@
+
+
+
+<div class="container">
+  
+    
+    
+    <!-- <form> -->
+      
+      <div class="group">      
+        <input type="text" required [(ngModel)]="name">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Name</label>
+
+        <p>Name : {{name}}</p>
+      </div>
+        
+      <div class="group">      
+        <input type="text" required [(ngModel)]="email">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Email</label>
+        <p>Email : {{email}}</p>
+      </div>
+
+      <input type="button" class="button"  value="Reset" (click)="Reset()">
+      
+    <!-- </form> -->
+        
+    
+    
+  </div>

@@ -1,0 +1,35 @@
+<div class="login">
+    <div class="login-triangle"></div>
+
+    <h2 class="login-header">Log in</h2>
+
+    <div class="login-container">
+
+        <!-- name input and validation -->
+        <p><input type="text" placeholder="Name" [(ngModel)]="uname"></p>
+        @if(isNameValid){
+
+            <p  style="color: green;">Name Valid</p>
+        }@else{
+
+            <p style="color: red;">Name is not valid</p>
+        }
+
+        <!-- Age input and validation -->
+        <p><input type="text" placeholder="Age" [(ngModel)]="uage"></p>
+        @if(isAgeValid){
+
+            <p *ngIf="uname" style="color: green;">Age Valid</p>
+        }@else{
+
+            <p style="color: red;">Age is not valid</p>
+        }
+        <!-- <ng-template #uageValidation>
+            <p *ngIf="uage" style="color: green;">Age Valid</p>
+        </ng-template> -->
+
+       
+
+        <p><input type="submit" value="Log in" (click)="fireNow()"></p>
+    </div>
+</div>

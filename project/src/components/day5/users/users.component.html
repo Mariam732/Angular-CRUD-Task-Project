@@ -1,0 +1,68 @@
+
+
+
+<!-- Day 5 -->
+
+
+
+<!-- <table class="table-fill">
+    <thead>
+    <tr>
+    <th class="text-left">id</th>
+    <th class="text-left">name</th>
+    <th class="text-left">email</th>
+    <th class="text-left">phone</th>
+    <th class="text-left">delete</th>
+    <th class="text-left">details</th>
+    <th class="text-left">update</th>
+
+
+
+
+    </tr>
+    </thead>
+    <tbody class="table-hover">
+        @for (std of AllUsers; track std.id) {
+            
+                <tr appCustom> 
+                    <td>{{$index+1}}</td>
+                   
+                   <td>{{std.name}}</td>
+                   <td>{{std.email}}</td>
+                   <td>{{std.phone}}</td>
+                   <td><button type="button" class="btn btn-danger"
+                        (click)="deleteUser(std.id)">Delete</button></td>
+                   <td><button routerLink="/users/{{std.id}}" type="button" class="btn btn-success">Details</button></td>
+                   <td><button routerLink="/update/{{std.id}}" type="button" class="btn btn-warning">Update</button></td> 
+   
+                   
+   
+                 </tr>
+            
+             
+          }
+    </tbody>
+    </table>
+      
+     -->
+
+
+    <!-- Day 6 -->
+
+
+
+    <div class="row text-center" >
+        <div class="col-1">#</div>
+        <div class="col-1">name</div>
+        <div class="col-2">email</div>
+        <div class="col-2">phone</div>
+        <div class="col-2">delete</div>
+        <div class="col-2">details</div>
+        <div class="col-2">update</div>
+    
+        </div>
+        <hr>
+
+        @for (std of AllUsers; track std.id) {
+    <app-one-student [oneStd]="std"></app-one-student>
+        }

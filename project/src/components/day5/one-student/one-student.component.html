@@ -1,0 +1,20 @@
+
+
+<!-- Day 6 -->
+
+<div class="my-2 col-12" appCustom >
+
+    <div class="row text-center" appCustom >
+        <div class="col-1">{{oneStd.id}}</div>
+                   
+                   <div class="col-1">{{oneStd.name|custom}}</div>
+                   <div class="col-2">{{oneStd.email}}</div>
+                   <div class="col-2">{{oneStd.phone}}</div>
+                   <div class="col-2"><button type="button" class="btn btn-danger"
+                        (click)="deleteUser(oneStd.id)">Delete</button></div>
+                   <div class="col-2"><button routerLink="/users/{{oneStd.id}}" type="button" class="btn btn-success">Details</button></div>
+                   <div class="col-2"><button routerLink="/update/{{oneStd.id}}" type="button" class="btn btn-warning">Update</button></div>
+   </div>
+    </div>
+
+    
